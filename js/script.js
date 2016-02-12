@@ -50,8 +50,6 @@ window.onload = function()
         element = renderer.domElement;
         container = document.getElementById('example');
         container.appendChild(element);
-        //División de pantalla...
-        //http://jaanga.github.io/cookbook/cardboard/readme-reader.html
         effect = new THREE.StereoEffect(renderer);
         effect.separation = 0.2;
         scene = new THREE.Scene();
@@ -286,7 +284,7 @@ window.onload = function()
                     divPuntua[0].innerHTML = divPuntua[1].innerHTML = numChoca + " / " + maxCubes;
                     if(numChoca >= maxCubes)
                     {
-                        window.location = "https://github.com/Jorger/shoot_the_boxes_cardboard";
+                        window.location = "https://github.com/16cameronk/vr";
                     }
                     eliminar.push(i);
                 }
